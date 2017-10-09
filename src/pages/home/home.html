@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      CAJA
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="scanBarcode()">SCAN</button>
+
+  <div *ngIf="results">
+    <p>
+      {{results.text}}
+    </p>
+  </div>
+</ion-content>
